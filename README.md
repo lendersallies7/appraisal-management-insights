@@ -1,2 +1,4 @@
-# appraisal-management-insights
-Practical resources and insights on residential property appraisal, valuation, appraisal management, and mortgage lending for industry professionals.
+# Residential Appraisal Insights
+
+Professional insights and resources covering residential appraisal management,
+property valuation, appraisal reviews, and mortgage lending.
