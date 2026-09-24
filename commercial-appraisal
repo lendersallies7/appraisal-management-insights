@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The One Number That Decides a Commercial Appraisal | Lenders Allies</title>
+<meta name="description" content="A 50 basis point shift in the capitalisation rate moves value by roughly 8%. How appraisers derive it, and how a lender should read the support behind it.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The One Number That Decides a Commercial Appraisal">
+<meta property="og:description" content="A 50 basis point shift in the capitalisation rate moves value by roughly 8%. How appraisers derive it, and how to read the support behind it.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#131820;
+  --navy:#1A1A6E;
+  --navy-mid:#3535A8;
+  --rust:#A8480F;
+  --slate:#59636F;
+  --rule:#DFE3E9;
+  --wash:#F5F7FA;
+  --paper:#FFFFFF;
+  --font:'Libre Franklin',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+
+html{-webkit-text-size-adjust:100%;}
+
+body{
+  margin:0;
+  padding:4rem 1.5rem 6rem;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--font);
+  font-size:17px;
+  line-height:1.65;
+  font-variant-numeric:tabular-nums;
+  -webkit-font-smoothing:antialiased;
+}
+
+.wrap{max-width:44rem;margin:0 auto;}
+
+p{margin:0 0 1.3em;}
+strong{font-weight:600;color:var(--navy);}
+em{font-style:italic;}
+
+a{
+  color:var(--navy-mid);
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
+  text-decoration-color:rgba(53,53,168,.35);
+  transition:text-decoration-color .18s ease;
+}
+a:hover{text-decoration-color:var(--navy-mid);}
+a:focus-visible{outline:2px solid var(--navy-mid);outline-offset:3px;border-radius:2px;}
+
+h1{
+  font-size:2.7rem;
+  font-weight:700;
+  line-height:1.05;
+  letter-spacing:-.035em;
+  color:var(--navy);
+  margin:0 0 1.1rem;
+}
+h2{
+  font-size:1.45rem;
+  font-weight:700;
+  line-height:1.2;
+  letter-spacing:-.02em;
+  color:var(--navy);
+  margin:3.4rem 0 .85rem;
+}
+h3{
+  font-size:1.0625rem;
+  font-weight:600;
+  letter-spacing:-.005em;
+  color:var(--ink);
+  margin:2.1rem 0 .4rem;
+}
+
+.lede{
+  font-size:1.25rem;
+  font-weight:400;
+  line-height:1.45;
+  color:var(--slate);
+  letter-spacing:-.01em;
+  margin:0 0 2.6rem;
+}
+
+/* ---------- SIGNATURE: sensitivity table ---------- */
+.sens{
+  margin:2.5rem 0 1.25rem;
+  border-top:2px solid var(--navy);
+  border-bottom:2px solid var(--navy);
+}
+.sens table{width:100%;border-collapse:collapse;font-size:.875rem;}
+.sens th{
+  font-weight:600;
+  font-size:.75rem;
+  letter-spacing:.02em;
+  color:var(--slate);
+  text-align:right;
+  padding:.7rem .5rem;
+  border-bottom:1px solid var(--rule);
+}
+.sens th:first-child{text-align:left;}
+.sens th.bar-head{text-align:center;width:34%;}
+.sens td{
+  padding:.52rem .5rem;
+  text-align:right;
+  border-bottom:1px solid #EDF0F4;
+  font-weight:500;
+}
+.sens td:first-child{text-align:left;font-weight:600;color:var(--navy);}
+.sens tr:last-child td{border-bottom:none;}
+.sens tr.base td{background:var(--wash);}
+.sens tr.base td:first-child{color:var(--ink);}
+
+.barcell{position:relative;padding:0 !important;height:2.05rem;}
+.axis{
+  position:absolute;left:50%;top:0;bottom:0;
+  width:1px;background:var(--rule);
+}
+.bar{
+  position:absolute;top:50%;height:9px;transform:translateY(-50%);
+  border-radius:1px;
+}
+.bar.up{left:50%;background:var(--rust);}
+.bar.down{right:50%;background:var(--navy);}
+
+.sens-note{
+  font-size:.8125rem;
+  color:var(--slate);
+  line-height:1.5;
+  margin:0 0 2.5rem;
+}
+
+/* ---------- Callout ---------- */
+.call{
+  background:var(--wash);
+  border-left:3px solid var(--rust);
+  padding:1.4rem 1.5rem;
+  margin:2.1rem 0;
+}
+.call p{margin:0;font-size:1rem;line-height:1.55;}
+.call p + p{margin-top:.75rem;}
+
+/* ---------- Method rows ---------- */
+.methods{margin:1.75rem 0;}
+.method{
+  padding:1.3rem 0;
+  border-top:1px solid var(--rule);
+}
+.methods .method:last-child{border-bottom:1px solid var(--rule);}
+.method h3{margin:0 0 .35rem;}
+.method p{margin:0 0 .55rem;font-size:.9375rem;line-height:1.58;}
+.method p:last-child{margin-bottom:0;}
+.verdict{
+  display:inline-block;
+  font-size:.75rem;
+  font-weight:600;
+  letter-spacing:.03em;
+  padding:.18rem .55rem;
+  border-radius:2px;
+  margin-bottom:.5rem;
+}
+.v-strong{background:#E8EAF6;color:var(--navy);}
+.v-mid{background:#F1F3F7;color:var(--slate);}
+.v-weak{background:#F8EEE7;color:var(--rust);}
+
+ul{margin:0 0 1.3em;padding-left:1.15rem;}
+li{margin-bottom:.5rem;padding-left:.25rem;}
+li::marker{color:var(--navy);}
+
+.pull{
+  font-size:1.3rem;
+  font-weight:500;
+  line-height:1.35;
+  letter-spacing:-.015em;
+  color:var(--navy);
+  border-top:2px solid var(--navy);
+  border-bottom:1px solid var(--rule);
+  padding:1.25rem 0;
+  margin:2.6rem 0;
+}
+
+.close{
+  border-top:2px solid var(--navy);
+  padding-top:1.35rem;
+  margin-top:3.4rem;
+}
+.close p{font-size:1rem;}
+.disclaimer{
+  font-size:.8125rem;
+  line-height:1.55;
+  color:var(--slate);
+  font-style:italic;
+  margin-top:1.2rem;
+}
+
+@media (max-width:640px){
+  body{padding:2.25rem 1rem 3.5rem;font-size:16px;}
+  h1{font-size:2rem;}
+  h2{font-size:1.28rem;margin-top:2.5rem;}
+  .lede{font-size:1.09rem;}
+  .sens{overflow-x:auto;}
+  .sens table{min-width:25rem;}
+  .sens th.bar-head{width:28%;}
+  .pull{font-size:1.12rem;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>The one number that decides a commercial appraisal</h1>
+
+<p class="lede">On an income-producing property, value is net operating income divided by a rate the appraiser selects. Move that rate by half a percentage point and the value moves by roughly eight percent.</p>
+
+<p>Lenders reviewing commercial appraisals tend to concentrate on the comparable sales, because that is the part that looks like residential work and the part they know how to interrogate.</p>
+
+<p>On most income-producing property, the comparable sales are supporting evidence. The conclusion comes from the income approach, and within it from a single figure — the capitalisation rate — that the appraiser selects and defends in prose.</p>
+
+<p>It is the most consequential number in the report and the least examined.</p>
+
+<h2>Why the leverage is so high</h2>
+
+<p>Direct capitalisation is arithmetic. Value equals net operating income divided by the capitalisation rate.</p>
+
+<p>Take a property with net operating income of $600,000. At a 6.0% rate it is worth $10 million. Here is what happens as the rate moves.</p>
+
+<div class="sens">
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Cap rate</th>
+      <th scope="col">Indicated value</th>
+      <th scope="col">Change</th>
+      <th scope="col" class="bar-head">Deviation from base</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5.00%</td><td>$12,000,000</td><td>+20.0%</td>
+      <td class="barcell"><span class="axis"></span><span class="bar up" style="width:43%"></span></td>
+    </tr>
+    <tr>
+      <td>5.25%</td><td>$11,428,571</td><td>+14.3%</td>
+      <td class="barcell"><span class="axis"></span><span class="bar up" style="width:31%"></span></td>
+    </tr>
+    <tr>
+      <td>5.50%</td><td>$10,909,091</td><td>+9.1%</td>
+      <td class="barcell"><span class="axis"></span><span class="bar up" style="width:20%"></span></td>
+    </tr>
+    <tr>
+      <td>5.75%</td><td>$10,434,783</td><td>+4.3%</td>
+      <td class="barcell"><span class="axis"></span><span class="bar up" style="width:9%"></span></td>
+    </tr>
+    <tr class="base">
+      <td>6.00%</td><td>$10,000,000</td><td>base</td>
+      <td class="barcell"><span class="axis"></span></td>
+    </tr>
+    <tr>
+      <td>6.25%</td><td>$9,600,000</td><td>&minus;4.0%</td>
+      <td class="barcell"><span class="axis"></span><span class="bar down" style="width:9%"></span></td>
+    </tr>
+    <tr>
+      <td>6.50%</td><td>$9,230,769</td><td>&minus;7.7%</td>
+      <td class="barcell"><span class="axis"></span><span class="bar down" style="width:17%"></span></td>
+    </tr>
+    <tr>
+      <td>6.75%</td><td>$8,888,889</td><td>&minus;11.1%</td>
+      <td class="barcell"><span class="axis"></span><span class="bar down" style="width:24%"></span></td>
+    </tr>
+    <tr>
+      <td>7.00%</td><td>$8,571,429</td><td>&minus;14.3%</td>
+      <td class="barcell"><span class="axis"></span><span class="bar down" style="width:31%"></span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p class="sens-note">Net operating income held constant at $600,000. Bars are proportional to percentage deviation from the base case.</p>
+
+<p>A quarter of a point — a difference two competent appraisers could reasonably disagree about — moves this property by roughly $400,000. Half a point moves it by more than three quarters of a million.</p>
+
+<p>For a lender writing at 70% loan-to-value, that is the difference between a $7 million facility and a $6.5 million one, decided by a figure most credit files never examine.</p>
+
+<h2>Where the rate comes from</h2>
+
+<p>Appraisers derive capitalisation rates several ways, and the methods are not equally strong. The report should say which was used and why.</p>
+
+<div class="methods">
+
+  <div class="method">
+    <span class="verdict v-strong">Strongest</span>
+    <h3>Market extraction</h3>
+    <p>Derived from actual comparable sales, by dividing each property's net operating income at the time of sale by its sale price.</p>
+    <p>This is the method the profession regards as best, because it reflects what buyers in that submarket actually paid. Its weakness is availability: it requires verified sale prices <em>and</em> verified income for properties genuinely comparable to the subject, and in most markets that combination is scarce.</p>
+  </div>
+
+  <div class="method">
+    <span class="verdict v-mid">Situational</span>
+    <h3>Band of investment</h3>
+    <p>Builds the rate from the financing structure — the proportions of debt and equity, the mortgage constant, and the return equity requires.</p>
+    <p>Useful where financing terms are well established and the assumptions are disclosed. It is only as good as the equity return assumption, which is itself a judgement.</p>
+  </div>
+
+  <div class="method">
+    <span class="verdict v-mid">Situational</span>
+    <h3>Debt coverage formula</h3>
+    <p>Derived from the debt coverage ratio, loan-to-value and mortgage constant that lenders in the market are actually applying.</p>
+    <p>Grounded in observable lending behaviour, which is a genuine strength. It describes what lenders will support rather than what buyers will pay, and those are not always the same number.</p>
+  </div>
+
+  <div class="method">
+    <span class="verdict v-weak">Weakest alone</span>
+    <h3>Published investor surveys</h3>
+    <p>National and regional surveys reporting rate ranges by property type.</p>
+    <p>Useful as a sanity check and as context. Weak as a primary basis, because the ranges are broad and the geography is coarse — a national office range says little about a specific submarket in a specific quarter. A report leaning principally on survey data for a property in a market where extraction was possible is making a choice worth asking about.</p>
+  </div>
+
+</div>
+
+<div class="call">
+  <p>The question to ask of any commercial appraisal is not what the capitalisation rate is. It is <strong>where it came from</strong>, and whether the report shows the working.</p>
+  <p>A rate extracted from three verified local sales is a finding. A rate quoted from a survey range with a sentence of justification is an assertion.</p>
+</div>
+
+<h2>The other half of the equation</h2>
+
+<p>Concentrating entirely on the rate misses that the numerator is equally contestable.</p>
+
+<p>Net operating income in an appraisal is not last year's actuals. It is the appraiser's view of stabilised income — which means judgements about market rent rather than contract rent, a vacancy and collection loss allowance, an expense ratio, and a reserve for replacements.</p>
+
+<p>Each of those is an assumption. A vacancy allowance set at 5% where the submarket is running at 9% inflates income, and the inflated income is then capitalised, compounding the error into the value conclusion.</p>
+
+<p>Two checks worth running on any income approach:</p>
+
+<ul>
+<li><strong>Does stabilised income differ materially from actuals,</strong> and is the difference explained? A gap is often legitimate — below-market leases rolling, recent lease-up — but it should be argued rather than assumed.</li>
+<li><strong>Is the vacancy allowance consistent with the market analysis</strong> earlier in the same report? Internal inconsistency between the narrative and the income model is one of the more common findings in commercial review, and one of the easiest to spot.</li>
+</ul>
+
+<p class="pull">Most commercial appraisals are not wrong. They are built on a chain of reasonable-looking assumptions, each of which moves the answer, and only some of which are shown.</p>
+
+<h2>What this means for review</h2>
+
+<p>It is why commercial technical review requires a certified general appraiser rather than a checklist.</p>
+
+<p>Nothing above can be caught by data validation. A rate of 6.0% is not flagged by any rule — the question is whether 6.0% is supportable for this asset, in this submarket, on this date, given the evidence the report presents. That is a judgement made by someone qualified to make it.</p>
+
+<p>A desk review by a residential reviewer will confirm the report is complete and the arithmetic holds. It will not tell you whether the most consequential number in the file is defensible.</p>
+
+<p>On a file where the valuation argument carries real weight in the credit decision, that distinction is the whole point of ordering a review at all.</p>
+
+<h2>Three questions for your next commercial file</h2>
+
+<ul>
+<li>How was the capitalisation rate derived, and does the report show the extraction or the build-up?</li>
+<li>Does stabilised net operating income differ from actuals, and is the difference argued?</li>
+<li>Is the vacancy assumption consistent with the market analysis in the same report?</li>
+</ul>
+
+<p>Three questions, ten minutes, and they interrogate the part of the report that actually determines the number.</p>
+
+<div class="close">
+  <p><a href="https://lendersallies.us/full-commercial-appraisal/">Lenders Allies</a> provides commercial appraisal and <a href="https://lendersallies.us/commercial-technical-reviews/">technical review</a> to banks, credit unions and commercial lenders across the United States.</p>
+  <p class="disclaimer">Illustrative figures throughout. General information only, not appraisal, legal or compliance advice. Capitalisation rate selection is a matter of professional judgement made by a qualified appraiser on the facts of a specific assignment.</p>
+</div>
+
+</div>
+</body>
+</html>
